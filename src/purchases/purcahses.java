@@ -17,6 +17,7 @@ public class purcahses extends javax.swing.JFrame {
     
     
     
+    
 
     
     public purcahses() {
@@ -45,7 +46,7 @@ public class purcahses extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        panel = new javax.swing.JPanel();
         keyboardInputQuantity = new javax.swing.JTextField();
         mouseInputQuantity = new javax.swing.JTextField();
         headphoneInputQuantity = new javax.swing.JTextField();
@@ -70,22 +71,24 @@ public class purcahses extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(keyboardInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 29, -1));
-        jPanel1.add(mouseInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 29, -1));
+        panel.setBackground(new java.awt.Color(255, 255, 255));
+        panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panel.add(keyboardInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 29, -1));
+        panel.add(mouseInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 29, -1));
 
         headphoneInputQuantity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 headphoneInputQuantityActionPerformed(evt);
             }
         });
-        jPanel1.add(headphoneInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 29, -1));
-        jPanel1.add(speakerInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 29, -1));
-        jPanel1.add(monitorInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 79, 29, -1));
-        jPanel1.add(chairInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 110, 29, -1));
-        jPanel1.add(windowsInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 141, 29, -1));
-        jPanel1.add(ethernetInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 172, 29, -1));
+        panel.add(headphoneInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 29, -1));
+        panel.add(speakerInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 29, -1));
+        panel.add(monitorInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 79, 29, -1));
+        panel.add(chairInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 110, 29, -1));
+        panel.add(windowsInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 141, 29, -1));
+        panel.add(ethernetInputQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 172, 29, -1));
 
         calculation.setText("Calculate Cost");
         calculation.addActionListener(new java.awt.event.ActionListener() {
@@ -93,68 +96,70 @@ public class purcahses extends javax.swing.JFrame {
                 calculationActionPerformed(evt);
             }
         });
-        jPanel1.add(calculation, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 203, 124, 34));
+        panel.add(calculation, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 203, 124, 34));
 
         Title.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 24)); // NOI18N
         Title.setText("Computer Center");
-        jPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 11, -1, -1));
+        panel.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 11, -1, -1));
 
         keyboardPrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         keyboardPrice.setText("Keyboard          $30.00");
-        jPanel1.add(keyboardPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+        panel.add(keyboardPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         mousePrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         mousePrice.setText("Mouse                $20.00");
-        jPanel1.add(mousePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        panel.add(mousePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         headphonePrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         headphonePrice.setText("Headphones    $75.00");
-        jPanel1.add(headphonePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        panel.add(headphonePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
         speakerPrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         speakerPrice.setText("Speakers           $25.00");
-        jPanel1.add(speakerPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+        panel.add(speakerPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
         monitorPrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         monitorPrice.setText("Monitor             $250.00");
-        jPanel1.add(monitorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, -1, -1));
+        panel.add(monitorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, -1, -1));
 
         chairPrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         chairPrice.setText("Gaming Chair  $399.99");
-        jPanel1.add(chairPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
+        panel.add(chairPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
 
         networkPrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         networkPrice.setText("Network Cord $35.00");
-        jPanel1.add(networkPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
+        panel.add(networkPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
 
         windowsPrice.setFont(new java.awt.Font("Vani", 0, 14)); // NOI18N
         windowsPrice.setText("Windows 10     $120.00");
-        jPanel1.add(windowsPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
+        panel.add(windowsPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
 
         subTotal.setFont(new java.awt.Font("SerifaDEE", 0, 18)); // NOI18N
         subTotal.setText("Subtotal: $0.00");
-        jPanel1.add(subTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, 20));
+        panel.add(subTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, 20));
 
         totalLabel.setFont(new java.awt.Font("SerifaDEE", 0, 18)); // NOI18N
         totalLabel.setText("Total: $0.00");
-        jPanel1.add(totalLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, 20));
+        panel.add(totalLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, 20));
 
         taxLabel.setFont(new java.awt.Font("SerifaDEE", 0, 18)); // NOI18N
         taxLabel.setText("Tax: $0.00");
-        jPanel1.add(taxLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, -1, 20));
+        panel.add(taxLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, -1, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/purchases/download (13).jpg"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 70, 50));
+        panel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 70, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
+            .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
         );
 
         pack();
@@ -271,7 +276,6 @@ public class purcahses extends javax.swing.JFrame {
     private javax.swing.JTextField headphoneInputQuantity;
     private javax.swing.JLabel headphonePrice;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField keyboardInputQuantity;
     private javax.swing.JLabel keyboardPrice;
     private javax.swing.JTextField monitorInputQuantity;
@@ -279,6 +283,7 @@ public class purcahses extends javax.swing.JFrame {
     private javax.swing.JTextField mouseInputQuantity;
     private javax.swing.JLabel mousePrice;
     private javax.swing.JLabel networkPrice;
+    private javax.swing.JPanel panel;
     private javax.swing.JTextField speakerInputQuantity;
     private javax.swing.JLabel speakerPrice;
     private javax.swing.JLabel subTotal;
